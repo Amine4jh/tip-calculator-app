@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono";
+}
+.main{
+    background: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    padding: 20px;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+}
+.container .content{
+    padding: 10px;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+.results{
+    background: hsl(183, 100%, 15%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container .options h4{
+    font-size: 12px;
+    color: hsl(186, 14%, 43%);
+}
+.bill,
+.select-tip{
+    margin-bottom: 20px;
+}
+.tips{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.tips-button{
+    margin: 5px;
+    padding: 3px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: hsl(183, 100%, 15%);
+    color: #fff;
+    font-weight: 600;
+}
+.tips button:hover{
+    background: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+#custom{
+    outline: none;
+    text-align: right;
+    font-weight: 600;
+    width: 80px;
+    margin: 5px;
+    padding: 2px 6px;
+    border-radius: 5px;
+    border: 1.5px solid transparent;
+    color: hsl(183, 100%, 15%);
+    background: hsl(189, 47%, 97%);
+}
+.bill input,
+.people-number input{
+    width: 100%;
+    outline: none;
+    text-align: right;
+    font-weight: 600;
+    color: hsl(183, 100%, 15%);
+    background: hsl(189, 47%, 97%);
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    border: 1.5px solid transparent;
+}
+.bill input{
+    background-image: url(images/icon-dollar.svg);
+}
+.people-number input{
+    background-image: url(images/icon-person.svg);
+}
+#custom:focus,
+.bill input:focus,
+.people-number input:focus{
+    border-color: hsl(172, 67%, 45%);
+}
+.results h4{
+    font-size: 12px;
+    color: #fff;
+    line-height: 0;
+}
+.results span{
+    font-size: 12px;
+    color: hsl(185, 41%, 84%);
+}
+.tip-amount,
+.total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.result p{
+    font-size: 30px;
+    font-weight: 600;
+    color: hsl(172, 67%, 45%);
+}
+.reset button{
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    padding: 5px;
+    color: hsl(183, 100%, 15%);
+    background: hsl(172, 67%, 45%);
+}
+.active-btn{
+    opacity: 1;
+    cursor: pointer;
+}
+.active-btn:hover{
+    background: hsl(185, 41%, 84%);
+}
+.disactive-btn{
+    opacity: 0.7;
+    cursor: no-drop;
+}
+.active-tip {
+    background-color: hsl(172, 67%, 45%);
+}
+
+@media (max-width: 600px) {
+    .container{
+        flex-direction: column;
+        width: 300px;
+        height: 550px;
+    }
+}
