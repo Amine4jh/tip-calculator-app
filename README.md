@@ -2,7 +2,7 @@
 
 ![Desktop Screenshot](image.png)
 
-A simple and responsive Tip Calculator web app built with **HTML**, **CSS**, and **JavaScript**. It helps users quickly calculate the tip amount and total bill per person.
+A simple, responsive Tip Calculator web app built using **HTML**, **CSS**, and **JavaScript**. Designed for quick and easy use, it allows users to calculate the tip amount and total bill per person based on the bill amount, tip percentage, and number of people. With real-time updates and a clean layout, the app ensures a smooth user experience across all devices.
 
 ---
 
